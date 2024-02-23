@@ -1,0 +1,113 @@
+print('hello world')
+
+
+print(2 + 3, 8 + 2)
+
+print(4%2, 2/4, 2//4)
+
+print(5*3)
+
+x = input('podaj liczbę')
+
+if int(x)>5:
+    print(int(x))
+else:
+    print(x-1)
+
+a=2.5
+b=3
+print(a*b)
+
+
+var1 = 2
+var2 = 3
+var1 += 2
+var3 = var1
+var1 *= 3
+var4 = var1/var2
+
+# print (var1+=2) wywala błąd
+
+print(var1, var2,var3, var4)
+var4 /=2
+print('var4 = ', var4)
+
+
+
+
+def funkcja(a):
+    e = (1+1/a)**a
+    return e
+print(funkcja(int(input('podaj '))))
+
+
+def wyswietl_tabliczke_mnozenia(n):
+
+    if 0 < n < 100:
+        for i in range(0, n + 1):
+            for j in range(0, n + 1):
+                print(f"{i} * {j} = {i * j}")
+            print("-" * 20)
+    else:
+        print("n is too large")
+
+
+print(wyswietl_tabliczke_mnozenia(n = int(input("Podaj liczbę całkowitą n: "))))
+
+
+
+import math
+
+def ułamki(a,b):
+    nwd = math.gcd(a, b)
+    p = a // nwd
+    q = b // nwd
+    return p, q
+
+print(ułamki(a = int(input('podaj a ')), b = int(input('podaj b '))))
+
+
+
+def symbol_newtona(n):
+    a = 0
+    for k in range(n + 1):
+        a += 1 / math.factorial(k)
+    return a
+
+n = 5
+wynik = symbol_newtona(n)
+print(f"Symbol Newtona dla n={n} wynosi: {wynik}")
+
+
+
+
+
+
+
+def nwd(a,b):
+    while b:
+        a, b = b, a % b
+    return a, e1
+
+
+
+print(nwd(a = int(input('podaj a ')), b = int(input('podaj b '))))
+
+
+
+math_e = math.e #idk z czym ja to mam porównać ale porównuje
+
+
+print(roznica_e1 = nwd(a = int(input('podaj a ')), b = int(input('podaj b '))) - math_e)
+roznica_e2 =  - math_e
+
+
+bezwzgledna_roznica_e1 = abs( - math_e)
+bezwzgledna_roznica_e2 = abs( - math_e)
+
+
+print("", roznica_e1)
+print("", roznica_e2)
+print("", bezwzgledna_roznica_e1)
+print("", bezwzgledna_roznica_e2)
+
